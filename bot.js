@@ -13,7 +13,7 @@ const r1 = require('snekfetch');
 const jimp = require('jimp')
 const math = require('math-expression-evaluator'); 
 const child_process = require("child_process");
-const developers = ['290908670529896448'];
+const developers = ['415595760990552065'];
 const admin = ".";
 const prefix = ".";
 
@@ -143,7 +143,7 @@ var msg = `${Date.now() - message.createdTimestamp}`
 var api = `${Math.round(client.ping)}`
 if (message.author.bot) return;
 let embed = new Discord.RichEmbed()
-                  .setColor('#36393e')
+                  .setColor('#FF0000')
 .setTitle(' Time Taken : '+msg + " ms")
 .setAuthor(' Discord Api : '+api + " ms")
 message.channel.send({embed:embed}).then(message => message.delete(5000));
@@ -158,12 +158,12 @@ message.channel.send({embed:embed}).then(message => message.delete(5000));
         message.delete(5000)
         if(!message.channel.guild) return;
         const e = new Discord.RichEmbed()
-        .setColor('#36393e')
+        .setColor('#FF0000')
         .setTitle('Check Your DM’s')
      const embed = new Discord.RichEmbed()
          .setColor('#36393e')
          .setTitle('Click To Join Support Server')
-         .setURL('https://discord.gg/PYqcDqd')
+         .setURL('https://discord.gg/qVnFWfu')
          .setDescription(`
          \`\`\`Main Commands  :\`\`\`         
          
@@ -335,7 +335,7 @@ const command = args.shift().toLowerCase();
 
 
   client.on('message',message =>{
-      var prefix = "#";
+      var prefix = ".";
  if(message.content.split(' ')[0].toLowerCase() == prefix + 'myinv') {
 let guild = message.guild
 var codes = [""]
@@ -413,7 +413,7 @@ client.on('message' , async (message) => {
     })
     
     const embed = new Discord.RichEmbed()
- .setColor('#36393e')
+ .setColor('#FF0000')
     .addField("Top Invites." ,`${(possibleInvites)}`)
 
     message.channel.send(embed)
